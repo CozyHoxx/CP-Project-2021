@@ -8,7 +8,6 @@ This project is done with collaboration from 4 team members.
 A museum reopens after months of closure due to the COVID-19 pandemic. 
 As a safety measure, the museum’s management decided to limit the number of visitors in the museum at one time. 
 The following rules have been set:
-
 1.	The museum opens from 9.00 a.m. to 6.00 p.m. daily.
 2.	The museum receives not more than 900 visitors per day.
 3.	Not more than 100 visitors are allowed in the museum at one time.
@@ -21,9 +20,7 @@ The following rules have been set:
 A **multithreaded** program is required to simulate operations of the control system. 
 
 ----
-
 The following are assumptions for the simulation:
-
 1.	First request to purchase tickets will be made at 8.00 a.m.
 2.	Subsequent purchase will be made every 1-4 minutes. Each purchase will be for 1-4 tickets.
 3.	Every ticket has an ID in the form of T****, where **** are running numbers from 0001 to 9999. There is also a timestamp of purchase on each ticket.

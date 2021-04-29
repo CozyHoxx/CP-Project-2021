@@ -28,3 +28,22 @@ The following are assumptions for the simulation:
 5.	Each visitor randomly uses a turnstile at either South Entrance or North Entrance to enter the museum. 
 6.	Each visitor stays in the museum for 50-150 minutes. The duration of stay will be randomly assigned to the visitor when the visitor is entering the museum.
 7.	After the duration of stay is over, the visitor randomly uses a turnstile at either East Exit or West Exit to leave the museum. 
+
+----
+Example Output
+```
+0800 Tickets T0001, T0002 sold
+0803 Ticket T0003 sold
+0900 Ticket T0001 entered through Turnstile SET1. Staying for 75 minutes
+0900 Ticket T0002 entered through Turnstile SET2. Staying for 75 minutes
+0900 Ticket T0003 entered through Turnstile NET3. Staying for 102 minutes
+0903 Tickets T0004, T0005, T0006 sold
+0903 Ticket T0004 entered through Turnstile NET1. Staying for 100 minutes
+0903 Ticket T0005 entered through Turnstile NET2. Staying for 100 minutes
+0903 Ticket T0006 entered through Turnstile NET4. Staying for 100 minutes
+…
+1015 Ticket T0001 exited through Turnstile EET1
+1015 Ticket T0002 exited through Turnstile EET2
+…
+
+```

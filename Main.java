@@ -7,24 +7,20 @@ class Main {
     private static BlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(900);
     private static BlockingQueue<DelayedQueue> currentVisitor = new DelayQueue<>();
     static Clock clock = new Clock();
-    final static int MAX_VISITOR_COUNT = 900;
     static int ticketNumber = 0;
-    static int groupCounter = 0;
 
     private static void updateTime() throws InterruptedException {
-        // System.out.println(clock.getTime());
+        // System.out.println(clock.getTime()); // View clock continuously
         clock.updateClock();
-        Thread.sleep(500);
+        Thread.sleep(1000);
     }
 
     private static void generateVisitor() throws InterruptedException {
-        // Thread.sleep(1);
         Random random = new Random();
         while (true) {
             if (ticketNumber <= 899 && clock.getHOUR() >= 8 && clock.getHOUR() < 18) {
                 if (true || (clock.getHOUR() == 8 && clock.getMINUTE() == 0)) {
                     int groupSize = random.nextInt(3) + 1;
-                    groupCounter += 200;
                     String currentTime = clock.getTime();
                     for (int i = 0; i < groupSize && (ticketNumber + groupSize <= 900); i++) {
                         ticketNumber++;
@@ -62,7 +58,7 @@ class Main {
             } else {
                 warned = false;
             }
-            while (currentVisitor.size() < 100 && clock.getHOUR() >= 8 && clock.getHOUR() < 18) {
+            while (currentVisitor.size() < 100 && clock.getHOUR() >= 9 && clock.getHOUR() < 18) {
                 int duration = random.nextInt(100) + 50; // long stay
                 // int duration = random.nextInt(10) + 5; // short stay
                 duration *= 1000;

@@ -1,3 +1,5 @@
+package cp.assignment.gui;
+
 import java.util.Random;
 public class Exit {
     Turnstile t1;

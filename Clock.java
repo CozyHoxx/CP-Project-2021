@@ -1,3 +1,14 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package cp.assignment.gui;
+
+/**
+ *
+ * @author Jason Pang
+ */
 public class Clock {
     private int HOUR = 8; // Starts clock at 8am
     private int MINUTE = 0;
@@ -13,7 +24,7 @@ public class Clock {
     }
 
     public void updateClock() {
-        MINUTE++;
+        MINUTE++; 
         if (MINUTE == 60) {
             HOUR++;
             MINUTE = 0;

@@ -1,3 +1,5 @@
+package cp.assignment.gui;
+
 public class Turnstile {
     boolean available;
 
